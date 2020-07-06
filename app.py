@@ -8,7 +8,6 @@ import plotly.offline as py
 from plotly.offline import init_notebook_mode, iplot
 import plotly.graph_objs as go
 from plotly import tools
-init_notebook_mode(connected=True)  
 from plotly.tools import FigureFactory as ff
 import pycountry
 import random
