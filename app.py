@@ -31,7 +31,7 @@ color_brewer = ['#57B8FF','#B66D0D','#009FB7','#FBB13C','#FE6847','#4FB5A5','#8C
 
 
 st.title("Stackoverflow Developer Survey")
-st.markdown("This dashboard provides analyses of the developer for a particular country")\
+st.markdown("This dashboard provides analyses of a developer")\
     
     
 
@@ -67,7 +67,7 @@ select = st.sidebar.selectbox("Select the country",['United States','United King
 
 
 
-agree = st.checkbox('Did you select the country you want to see analysis for otherwise the default countries analysis will be shown')
+agree = st.checkbox('Check the box if you have selected the country you want to see analyses from')
 if agree:
     df= data[data['Country'] == select]
 
@@ -265,7 +265,7 @@ if agree:
     
     
     
-agree = st.checkbox('Do you want to see the analysis for developer all over the world')
+agree = st.checkbox('Check the box if you want to see analysis for developer all over the world')
 if agree:
     
     st.header("Male and Female who code as a Hobby")
